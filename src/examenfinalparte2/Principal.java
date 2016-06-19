@@ -9,8 +9,15 @@ public class Principal {
         {
         int digitos=2;
         int numeroDigitos=0;
+        /**
+        * Condicion que se le asigna al bucle, para ingresar un valor mayor a cero 
+        */
         if(digitos<=0)
         System.out.println("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): ");
+        /**
+        * Tenemos un bucle for que recorre la variable i mientras esta sea menor o igual a 99999.
+        * Cada vez que se recorra una vuelta esta sumara al contador.
+        */
         for(int i = 1; i <= 99999; i++ )
         {
             
@@ -21,7 +28,15 @@ public class Principal {
             comparar(numeroDigitos, digitos, i);
         }
         }
-
+    /**
+    *
+    *
+    * compara el numero introducido con el numero de digitos
+    * si es igual a true se visualiza si es false no visualiza nada
+    * @param numeroDigitos numero de digitos que se asignan
+    * @param digitos numero introducido por el usuario
+    * @param i coloca el metodo en el bucle
+    */
     public static void comparar(int numeroDigitos, int digitos, int i) {
         if(numeroDigitos==digitos){
             if (i < 4) p = true;
@@ -50,7 +65,10 @@ public class Principal {
                 System.out.println(i);
         }
     }
-
+    /** 
+    * @param i coloca el metodo en el bucle
+    * @return devuelta el numero de vueltas y estan aumentan y el contador recoge el numero de digitos
+    */
     public static int calcular(int i) {
         int aux = i;
         int contador=0;
