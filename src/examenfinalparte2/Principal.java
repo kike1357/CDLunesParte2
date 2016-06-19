@@ -13,15 +13,8 @@ public class Principal {
         System.out.println("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): ");
         for(int i = 1; i <= 99999; i++ )
         {
-            int aux = i;
- 
-            int contador=0;
- 
-            while (aux != 0)
-        {
-            aux = aux / 10;
-            contador++;
-        }
+            
+            int contador = calcular(i);
         numeroDigitos=contador;
             
             
@@ -53,6 +46,17 @@ public class Principal {
             }
         }
         }
+
+    public static int calcular(int i) {
+        int aux = i;
+        int contador=0;
+        while (aux != 0)
+        {
+            aux = aux / 10;
+            contador++;
+        }
+        return contador;
+    }
  
        
  
