@@ -18,34 +18,38 @@ public class Principal {
         numeroDigitos=contador;
             
             
-            if(numeroDigitos==digitos){
-                   if (i < 4) p = true;
+            comparar(numeroDigitos, digitos, i);
+        }
+        }
+
+    public static void comparar(int numeroDigitos, int digitos, int i) {
+        if(numeroDigitos==digitos){
+            if (i < 4) p = true;
             else
             {
-            if (i % 2 == 0) p = false; 
+                if (i % 2 == 0) p = false; 
                 else
                 {
-                    int contador1 = 0;  
-                    int i1 = 1; 
-                    int k = (i - 1) / 2; 
-                    if  (k % 2 == 0) k--;  
-             
+                    int contador1 = 0;
+                    int i1 = 1;
+                    int k = (i - 1) / 2;
+                    if  (k % 2 == 0) k--;
+                    
                     while(i1 <= k)
                     {
                         if (i % i1 == 0) contador1++;
-                            i1 += 2;
-                            if (contador1 == 2) i1 = k + 1;
+                        i1 += 2;
+                        if (contador1 == 2) i1 = k + 1;
                     }
- 
-        if (contador1 == 1) p = true;
-            } 
-        } 
-     
-                if (p == true) 
-                    System.out.println(i);    
+                    
+                    if (contador1 == 1) p = true;
+                }    
             }
+            
+            if (p == true)
+                System.out.println(i);
         }
-        }
+    }
 
     public static int calcular(int i) {
         int aux = i;
