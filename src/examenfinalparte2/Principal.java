@@ -1,12 +1,18 @@
 
 package examenfinalparte2;
-
+/**
+ * Programa que mostrara por pantalla todos los numeros primos que cumplan con los requisitos.
+ * Tendremos que introducir un numero mayor a 0 
+ * Y este por pantalla nos muestra los numeros primos con los numeros de digitos que indicamos.
+ + */
 public class Principal {
 
     public static boolean p = false;
     
     public static void main(String arg[])
+            
         {
+            
         int digitos=2;
         int numeroDigitos=0;
         /**
